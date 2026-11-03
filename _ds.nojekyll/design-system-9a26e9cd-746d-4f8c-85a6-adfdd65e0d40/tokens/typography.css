@@ -1,0 +1,38 @@
+/* 簡約文青 — Typography tokens (v2: film-photography editorial)
+   Two voices: a neutral grotesque (Helvetica) for names, body & captions, and a
+   MONOSPACE (IBM Plex Mono) for the editorial signature — bracket labels [01],
+   all-caps meta, numbering, and vertical running text. Everything is SMALL: the
+   photographs are the display element, type stays quiet and precise. */
+
+:root {
+  /* ---- Families ---- */
+  --font-sans: 'Helvetica Neue', Helvetica, 'Noto Sans TC', Arial, sans-serif; /* neutral grotesque */
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace; /* editorial voice */
+  --font-cjk:  'Noto Sans TC', 'Helvetica Neue', sans-serif;
+
+  /* ---- Type scale (rem, 16px base). Deliberately compact. ---- */
+  --fs-display: 2rem;      /* 32px — a title page name, rarely bigger */
+  --fs-title:   1.25rem;   /* 20px — section / collection title */
+  --fs-lead:    0.9375rem; /* 15px — lead paragraph / quote */
+  --fs-body:    0.8125rem; /* 13px — body & most UI text */
+  --fs-caption: 0.75rem;   /* 12px — captions */
+  --fs-meta:    0.6875rem; /* 11px — mono meta, numbering, footer */
+  --fs-micro:   0.625rem;  /* 10px — tracked labels */
+
+  /* ---- Weights ---- */
+  --fw-regular: 400;   /* @kind font */
+  --fw-medium: 500;    /* @kind font */
+  --fw-bold: 700;      /* @kind font */
+
+  /* ---- Line heights ---- */
+  --lh-tight: 1.1;    /* @kind other */ /* display */
+  --lh-snug: 1.35;    /* @kind other */ /* captions / meta */
+  --lh-body: 1.55;    /* @kind other */ /* running text */
+  --lh-cjk: 1.8;      /* @kind other */ /* CJK body */
+
+  /* ---- Letter spacing ---- */
+  --ls-tight: -0.01em;   /* @kind other */ /* grotesque headings */
+  --ls-normal: 0;        /* @kind other */
+  --ls-mono: 0.02em;     /* @kind other */ /* mono default */
+  --ls-label: 0.14em;    /* @kind other */ /* tracked all-caps mono labels */
+}

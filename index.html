@@ -60,13 +60,14 @@
   <!-- ================= NAV ================= -->
   <nav data-screen-label="Masthead" style="position: sticky; top: 0; z-index: 50; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 13px clamp(20px,5vw,72px); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line-hair); background-color: var(--surface-page)">
     <a href="#top" id="brand" data-nav-view="top" onClick="{{ goTop }}" style="font-family:var(--font-mono);font-size:clamp(16px,2vw,21px);font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer">CHEN YOUTONG</a>
-    <div style="display:flex;flex-wrap:wrap;gap:clamp(12px,2vw,28px)">
+    <div style="display:flex;flex-wrap:wrap;gap:clamp(12px,2vw,28px);margin-left:auto">
       <a href="#words" data-nav-view="words" onClick="{{ goWords }}" style="font-family:var(--font-mono);font-size:clamp(12px,1.3vw,14px);letter-spacing:.1em;text-transform:lowercase;cursor:pointer">profile</a>
       <a href="#credits" data-nav-view="credits" onClick="{{ goCredits }}" style="font-family:var(--font-mono);font-size:clamp(12px,1.3vw,14px);letter-spacing:.1em;text-transform:lowercase;cursor:pointer">works</a>
       <a href="#films" data-nav-view="films" onClick="{{ goFilms }}" style="font-family:var(--font-mono);font-size:clamp(12px,1.3vw,14px);letter-spacing:.1em;text-transform:lowercase;cursor:pointer">films</a>
       <a href="#photographs" data-nav-view="photographs" onClick="{{ goPhotographs }}" style="font-family:var(--font-mono);font-size:clamp(12px,1.3vw,14px);letter-spacing:.1em;text-transform:lowercase;cursor:pointer">photographs</a>
       <a href="#contact" data-nav-view="contact" onClick="{{ goContact }}" style="font-family:var(--font-mono);font-size:clamp(12px,1.3vw,14px);letter-spacing:.1em;text-transform:lowercase;cursor:pointer">contact</a>
     </div>
+    <button type="button" class="ct-btn" data-contact-open aria-haspopup="dialog"><span class="ct-dot"></span>聯繫我</button>
   </nav>
 
   <!-- ================= HERO ================= -->
@@ -787,5 +788,6 @@ class Component extends DCLogic {
   }
 }
 </script>
+<script src="./contact-widget.js" defer></script>
 </body>
 </html>

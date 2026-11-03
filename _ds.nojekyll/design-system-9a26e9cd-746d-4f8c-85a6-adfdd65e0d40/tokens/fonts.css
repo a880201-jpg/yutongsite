@@ -1,0 +1,11 @@
+/* 簡約文青 — Webfonts (v2: film-photography editorial)
+   The new direction pairs a neutral grotesque (Helvetica — system, faithful to the
+   references) with a monospace editorial voice (IBM Plex Mono) used for bracket
+   labels, all-caps captions, numbering and vertical running text. CJK uses Noto Sans TC.
+
+   SUBSTITUTION NOTE: the reference collection pages are set in Helvetica Neue (a system
+   font — no file needed). The monospace is a neutral mono; IBM Plex Mono is the nearest
+   open match. If you have the exact typefaces (e.g. a licensed grotesque / mono), send
+   them and I'll swap them in. */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');

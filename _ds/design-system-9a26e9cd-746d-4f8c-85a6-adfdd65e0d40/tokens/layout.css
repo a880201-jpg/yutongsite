@@ -1,0 +1,42 @@
+/* 簡約文青 — Spacing, radius, shadow, layout (v2: film-photography editorial)
+   Sharp corners (Swiss), generous white margins, and a single soft page-lift
+   shadow for the white canvas floating on the dark backdrop. */
+
+:root {
+  /* ---- Spacing scale (4px base) ---- */
+  --sp-1: 0.25rem;   /* 4  */
+  --sp-2: 0.5rem;    /* 8  */
+  --sp-3: 0.75rem;   /* 12 */
+  --sp-4: 1rem;      /* 16 */
+  --sp-5: 1.5rem;    /* 24 */
+  --sp-6: 2rem;      /* 32 */
+  --sp-7: 3rem;      /* 48 */
+  --sp-8: 4rem;      /* 64 */
+  --sp-9: 6rem;      /* 96 */
+  --sp-10: 8rem;     /* 128 */
+
+  /* ---- Radii: sharp editorial. Corners are square; only nav arrows are round. ---- */
+  --radius-none: 0;
+  --radius-sm: 0;      /* images & panels: NO rounding */
+  --radius-chip: 2px;  /* the rare small chip */
+  --radius-pill: 999px;/* circular prev/next arrows */
+
+  /* ---- Shadows: one soft page lift; interface is otherwise flat ---- */
+  --shadow-none: none;
+  --shadow-page: 0 8px 40px rgba(0, 0, 0, 0.35);   /* white canvas on dark backdrop */
+  --shadow-arrow: 0 1px 6px rgba(0, 0, 0, 0.12);   /* circular nav button */
+  --shadow-hover: 0 4px 18px rgba(0, 0, 0, 0.10);
+
+  /* ---- Layout ---- */
+  --container-max: 1100px;    /* @kind other */
+  --container-narrow: 640px;  /* @kind other */ /* reading measure */
+  --gutter: 1.5rem;
+  --grid-gap: 0.75rem;        /* tight photo-grid gutter */
+
+  /* ---- Motion: quick, mechanical, no bounce (matches the mono/precise voice) ---- */
+  --ease-out: cubic-bezier(0.2, 0, 0, 1);        /* @kind other */
+  --ease-in-out: cubic-bezier(0.45, 0, 0.15, 1); /* @kind other */
+  --dur-fast: 120ms;   /* @kind other */
+  --dur-base: 220ms;   /* @kind other */
+  --dur-slow: 420ms;   /* @kind other */
+}
